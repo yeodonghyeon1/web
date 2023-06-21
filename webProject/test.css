@@ -1,0 +1,97 @@
+/* 전체 스타일 */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* 상단 메뉴 스타일 */
+header {
+	text-align: center;
+}
+
+.top-menu {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page-name {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.menu-items a {
+	color: white;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+hr {
+	margin: 10px 0;
+	border: none;
+	border-top: 1px solid #ccc;
+}
+
+/* 검색 부분 스타일 */
+.search-section {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.search-section input[type="text"] {
+	padding: 10px;
+	width: 500px;
+}
+
+.search-section button[type="submit"] {
+	padding: 10px 20px;
+}
+
+/* 카테고리 스타일 */
+.category-section {
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.category-section ul {
+	list-style: none;
+	padding: 0;
+}
+
+.category-section ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.category-section ul li a {
+	text-decoration: none;
+}
+
+/* 최신 질문 스타일 */
+.recent-questions {
+	text-align: center;
+}
+
+.recent-questions h2 {
+	margin-bottom: 40px;
+}
+
+.recent-questions table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.recent-questions th, .recent-questions td {
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+.recent-questions th {
+	background-color: #f0f0f0;
+}
