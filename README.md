@@ -1,6 +1,6 @@
 # web
 
-JSP와 MYSQL을 이용해서 만든 웹피이지 
+JSP와 MYSQL을 이용해서 만든 웹페이지 
 
 #기능
 
