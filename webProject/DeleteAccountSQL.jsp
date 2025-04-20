@@ -23,12 +23,18 @@
 		if (result == 1) { // 탈퇴 성공
 			session.invalidate(); //세션에서 정보 삭제
 			response.sendRedirect("DeleteAccountSuccess.jsp");
-		} else { // 탈퇴 실패
-			response.sendRedirect("MyPage.jsp");
 		} 
+		
+		else { // 탈퇴 실패%>
+			<script> alert("계정 정보 수정에 실패하였습니다.");
+	 		 window.location.href = "MyPage.jsp";</script>
+	  <%} 
+		
 	} catch (Exception e) {
-		System.out.println("exception");
-	} finally {
+		System.out.println("exception");%>
+		<script> alert("계정 정보 수정에 실패하였습니다.");
+		 window.location.href = "MyPage.jsp";</script>
+  <%} finally {
 		try {
 			if (pstmt != null) pstmt.close();
 			if (conn != null) conn.close();

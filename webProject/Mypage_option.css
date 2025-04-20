@@ -1,0 +1,105 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+/* Header styles */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav{
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#top_menu a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 30px;
+}
+.header-left span {
+    font-weight: bold;
+}
+
+/* Sidebar styles */
+aside {
+    float: left;
+    width: 20%;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.sidebar {
+    list-style-type: none;
+    
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+.sidebar li:hover{
+	background-color: gray;
+}
+
+.sidebar li:active{
+	background-color: black;
+}
+/* Content styles */
+.content {
+    float: left;
+    width: 80%;
+    padding: 10px;
+}
+
+/* Divider styles */
+.divider {
+    width: 3px;
+    height: 150%;
+    background-color: #ccc;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+/* Article styles */
+article {
+    margin-top: 10px;
+}
+
+/* Horizontal divider */
+hr.divider-line {
+    margin: 15px 40;
+    border: none;
+    border-top: 5px solid #ccc;
+}
+
+@media screen and (max-width: 768px) {
+	/* 화면이 좁을 때 레이아웃 조정 */
+	.container {
+		flex-direction: column; /* 세로 방향으로 요소들을 정렬 */
+	}
+	#board_area {
+		flex-basis: 100%; /* 게시판 영역을 가로 방향 전체 너비로 설정 */
+		margin-top: 20px; /* 게시판 영역 위쪽 여백 추가 */
+	}
+}

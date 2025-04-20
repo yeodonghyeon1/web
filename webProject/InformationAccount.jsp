@@ -13,6 +13,9 @@
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
+	String UserPwd= "";
+	String UserName = "";
+	String UserEmail = "";
 	
 	try {
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/database", "root", "1234");
@@ -23,12 +26,16 @@
 		rs = pstmt.executeQuery();
 		
 		if (rs.next()) {
-			UserId = rs.getString("UserId");
-			String UserName = rs.getString("UserName");
-			String UserEmail = rs.getString("UserEmail");
+			if(rs.getString("UserId").equals(UserId)){
+				UserPwd = rs.getString("UserPwd");
+				UserName = rs.getString("UserName");
+				UserEmail = rs.getString("UserEmail");
+			}
 			
+			System.out.println("rs.next() 값:" + UserId + UserPwd + UserName + UserEmail);
 			// 포워드로 전달하기 위해
 			request.setAttribute("UserId", UserId);
+			request.setAttribute("UserPwd", UserPwd);
 			request.setAttribute("UserName", UserName);
 			request.setAttribute("UserEmail", UserEmail);
 			

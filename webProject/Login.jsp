@@ -26,7 +26,6 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <ul class="nav navbar-nav">
             <li><a href="mainpage.jsp"> HOME</a></li>
-            <li><a href = "mainpage.jsp">게시판</a></li>
          </ul>
          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -55,9 +54,6 @@
                	<input type = "password" class = "form-control" placeholder = "비밀번호" name = "UserPwd">
             </div>
             <input type="submit" class = "btn btn-primary form-control" value = "로그인">
-            	<% if(msg != null){ %>
-		    	  <%=msg%>
-		      <% }%>
          </form>
       </div>
       </div>

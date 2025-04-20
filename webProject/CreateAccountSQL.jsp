@@ -109,9 +109,7 @@ try {
 		} catch (Exception ex) {
 		}
 }
-
-response.sendRedirect("CreateAccountSucces.jsp"); //회원가입 성공했다는 페이지로 안 넘어가요ㅠ
-
-
+//response.sendRedirect("CreateAccountSuccess.jsp"); //ERROR(Succes -> Success)
 %>
-
+<script> alert("회원가입에 성공하였습니다");
+	 		 window.location.href = "mainpage.jsp";</script>

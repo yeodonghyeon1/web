@@ -38,6 +38,7 @@
 	// information.jsp에서 데이터를 전달받아서 화면에 미리 보여지도록 처리
 	String UserId = (String)request.getAttribute("UserId");
 	String UserName = (String)request.getAttribute("UserName");
+	String UserPwd = (String)request.getAttribute("UserPwd");
 	String UserEmail = (String)request.getAttribute("UserEmail");
 %>  
   
@@ -50,7 +51,7 @@
   			</tr>
   			<tr>
   				<td>비밀번호</td>
-  				<td><input type="password" name="UserPwd"></td>
+  				<td><input type="password" name="UserPwd"value="<%=UserPwd%>"></td>
   			</tr>
   			<tr>
   				<td>사용자 이름</td>
@@ -65,6 +66,7 @@
   			</tr>
   		</table>
 	</form>
+	<button type="button" onclick="location.href='MyPage.jsp'">취소</button>
 	
 </body>
 </html>
